@@ -1,0 +1,54 @@
+body,
+html {
+    font-family: 'Baloo Tamma 2', cursive;
+    height: 100%;
+  margin: 0 auto;
+
+
+}
+.body{
+    display: flex;
+    flex-direction: row;
+    background:#ecf7f6;
+    margin: 0 auto;
+    padding: 20px;
+}
+.container{
+    height: 100%;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: min-content auto min-content;
+    grid-template-areas: 
+    'header'
+    'main'
+    'footer';
+}
+.chords{
+    margin: 0 auto;
+    background:#ffd803;
+    padding: 20px;
+    border-radius: 5px;
+}
+header{display: flex;
+    grid-area: header;
+    margin: 50px;
+}
+main{
+    margin: 20px;
+    border-radius: 10px;
+    background: #e3f6f5;
+    grid-area: main;
+
+    /* margin: 0 auto; */
+}
+footer{
+    grid-area: footer;
+    text-align: center;
+}
+.btn{
+    font-family: 'Alata', sans-serif;
+    /* display: inline-flex; */
+    padding: 20px;
+    border: none;
+    align-self: center;
+}
